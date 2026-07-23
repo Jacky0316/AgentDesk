@@ -1,0 +1,12 @@
+.execution-card{display:flex;gap:10px;max-width:590px;padding:12px 14px;border:1px solid #365b7f;border-radius:12px;background:linear-gradient(135deg,#162b41,#132337);color:#dbeafb;box-shadow:0 8px 22px rgba(4,12,23,.16)}
+.execution-card.waiting{border-color:#a77d36;background:linear-gradient(135deg,#382b18,#2d2418)}
+.execution-icon{display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:9px;background:#204a72;color:#85c2ff}
+.execution-card.waiting .execution-icon{background:#70521f;color:#ffe0a1}
+.execution-card>div:last-child{min-width:0;display:grid;gap:3px}
+.execution-card strong{font-size:14px;line-height:1.35}
+.execution-card span{font-size:12px;line-height:1.45;color:#a9c2dc}
+.execution-steps{display:flex;align-items:center;gap:6px;margin-top:4px;color:#8da8c2;font-size:11px}
+.execution-steps i{display:block;width:6px;height:6px;border-radius:99px;background:#45627d}
+.execution-steps i.done{background:#5bc88b}
+.execution-steps i.active{background:#68aeff;box-shadow:0 0 0 4px rgba(104,174,255,.12);animation:execution-pulse 1.3s ease-in-out infinite}
+@keyframes execution-pulse{50%{transform:scale(1.25);opacity:.55}}
